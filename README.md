@@ -1,2 +1,2 @@
 # IPOnews
-Parses Nasdaq and TSX/V and emails the user updates about newly released IPOs
+Parses Nasdaq and TSX/V  webpages then emails the user updates about newly released IPOs
