@@ -1,0 +1,27 @@
+# Create databases in mysql
+
+# To use IPOnews.php, create the following database
+create database NewsScraper;
+
+use NewsScraper;
+
+create table TSXV (cname varchar(100) primary key, adate varchar(15), symbol varchar(12));
+
+create table NASDAQ (cname varchar(100) primary key, market varchar(10), price varchar(50), adate varchar(15));
+
+show tables;
+
+# To use IPOnews.py, create the following database
+create database IpoNews;
+
+use IpoNews;
+
+create table nasdaq_upcoming (cname varchar(100) primary key, symbol varchar(15), market varchar(30), price varchar(50), adate varchar(15));
+
+create table nasdaq_recent (cname varchar(100) primary key, symbol varchar(15), market varchar(30), price varchar(50), adate varchar(15));
+
+create table tsx_recent (cname varchar(100) primary key, symbol varchar(15), adate varchar(15));
+
+create table tsv_recent (cname varchar(100) primary key, symbol varchar(15), adate varchar(15));
+
+show tables;
